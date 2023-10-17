@@ -37,9 +37,9 @@ function tinhDiem() {
   var diemTongKet = diemMon1 + diemMon2 + diemMon3 + diemUuTienKhuVuc + diemUuTienDoiTuong;
   var message = "";
   if (diemTongKet >= diemChuan && diemMon1 !== 0 && diemMon2 !== 0 && diemMon3 !== 0) {
-    message = "Chúc mừng, bạn đã đậu! Tổng điểm của bạn là: " + diemTongKet + " điểm";
+    message = "Chúc mừng, bạn đã đậu!" + "\n" + "Tổng điểm của bạn là: " + diemTongKet + " điểm";
   } else {
-    message = "Rất tiếc, bạn đã rớt! Tổng điểm của bạn là: " + diemTongKet + " điểm";
+    message = "Rất tiếc, bạn đã rớt!" + "\n" + "Tổng điểm của bạn là: " + diemTongKet + " điểm";
   }
   alert(message + "\n" + khuVucMessage + "\n" + doiTuongMessage);
 }
@@ -147,4 +147,3 @@ function hienThiSoKetNoi() {
     document.getElementById("so_ket_noi").value = "";
   }
 }
-  
